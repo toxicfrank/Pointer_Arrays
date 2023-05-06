@@ -24,6 +24,9 @@ void _puts(char *str)
 	}
 	fprintf(stdout, "%s\n", str);
 }
+
+// or one can write the function below to perform function as
+//the one above
 void __puts(char *str)
 {
 	puts(str);
