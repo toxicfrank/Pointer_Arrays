@@ -3,20 +3,14 @@
 /**
  * _strlen - function that returns the length of a string.
  * @s: pointer to a character
- * Return: int
+ * Return: count
  */
 
 int _strlen(char *s)
 {
-	unsigned int i, str1;
-	int count = 0;
-	str1 = strlen(s);
+	int count;
 
-	for(i = 0; i < str1; i++){
-		if (*s != '\0')
-		{
-			count++;
-		}
-	}
+	count = strlen(s);
+
 	return (count);
 }
