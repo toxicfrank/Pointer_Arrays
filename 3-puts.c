@@ -1,7 +1,10 @@
 #include "main.h"
-
+#define stdout stdout
 /**
- * print_rev - function that prints a string, in reverse, followed by a new line.
+ * _puts - function that prints a string,
+ * followed by a new line, to stdout.
+ * __puts - function that prints a string,
+ * followed by a new line, to stdout.
  * @s: pointer to a character
  * Return: string in reverse
  */
@@ -19,7 +22,7 @@ void _puts(char *str)
 			count ++;
 		}
 	}
-	printf("%s\n", str);
+	fprintf(stdout, "%s\n", str);
 }
 void __puts(char *str)
 {
