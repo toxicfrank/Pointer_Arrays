@@ -43,6 +43,7 @@ char *_strcpy(char *dest, char *src)
  */
 char *str_cpy (char *dest, char *src)
 {
+	char *return_str = dest;
 	if (dest == NULL)
 	{
 		return (NULL);
@@ -55,8 +56,5 @@ char *str_cpy (char *dest, char *src)
 	}
 	*dest = '\0';
 
-	char *return_str = dest;
-
 	return (return_str);
-	
 }
